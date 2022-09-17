@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <form action="{% url 'app1:show_page' %}" method="post">
+        {% csrf_token %}
+        <input name="user" type="text">
+        <input name="text" maxlength="250" type="text">
+        <input type="submit" value="add">
+    </form>
+</head>
+<body>
+
+</body>
+</html>
